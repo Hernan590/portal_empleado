@@ -84,7 +84,7 @@ export class SidebarComponent implements OnInit{
             icon: 'success'
           }).then(() => {
             // Navegar a la página de inicio de sesión o recargar
-            window.location.href = '/login'; // Cambiar ruta según sea necesario
+            window.location.href = '/portal_empleado/login'; // Cambiar ruta según sea necesario
           });
         }, 1000); 
       }
