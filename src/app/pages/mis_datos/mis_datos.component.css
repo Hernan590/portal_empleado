@@ -1,0 +1,58 @@
+/* Asegúrate de que el contenedor ocupe el 100% del ancho en pantallas pequeñas */
+.container-fluid {
+    padding: 0 1rem; /* Agrega un poco de padding en los laterales para evitar que el contenido toque los bordes */
+}
+
+/* Ajustes para el accordion */
+.card-header {
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+}
+
+.card-body {
+    padding: 1rem; /* Agrega padding dentro del card-body */
+}
+
+/* Ajuste de la tabla */
+.table {
+    width: 100%; /* Asegura que la tabla ocupe el ancho completo del contenedor */
+    font-size: 0.875rem; /* Ajusta el tamaño de la fuente para que se ajuste mejor en pantallas pequeñas */
+}
+
+.table th, .table td {
+    padding: 0.5rem; /* Agrega padding a las celdas para mejorar la legibilidad */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9; /* Color de fondo alternante para filas de tabla */
+}
+
+.table-bordered {
+    border: 1px solid #ddd; /* Agrega borde a la tabla */
+}
+
+@media (max-width: 767.98px) {
+    /* Ajustes específicos para pantallas pequeñas */
+    .col-12 {
+        padding: 0; /* Elimina padding en columnas de pantalla completa */
+    }
+    
+    .card-header {
+        font-size: 1rem; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
+    }
+    
+    .btn-link {
+        font-size: 0.875rem; /* Ajusta el tamaño del botón en pantallas pequeñas */
+    }
+    
+    .table th, .table td {
+        font-size: 0.75rem; /* Reduce el tamaño de la fuente de la tabla en pantallas pequeñas */
+    }
+
+    .reduced-text {
+        font-size: 0.70rem; /* Ajusta el tamaño de la fuente según tus necesidades */
+    }
+
+    .reduced-text2 {
+        font-size: 0.65rem; /* Ajusta el tamaño de la fuente según tus necesidades */
+    }
+}

@@ -1,0 +1,33 @@
+<div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''">
+  <div class="logo-container">
+    <button class="logo" (click)="toggleCollapse()">
+      <img src="../../../../assets/icono2.png" style="width: 35px; height: 35px;">
+    </button>
+    <div class="logo-text" *ngIf="collapsed">Empleado</div>
+    <button class="btn-close" *ngIf="collapsed" (click)="closeSidenav()">
+      <i class="fa-solid fa-xmark text-white"></i>
+    </button>
+  </div>
+  <div>
+    <p class="user-text" *ngIf="collapsed"> {{ nombre1 }} {{ apellido1 }}</p>
+      <hr style="background-color: white">
+  </div>
+  <ul class="sidenav-nav">
+      <li class="sidenav-nav-item" *ngFor="let data of navData">
+        <a class="sidenav-nav-link" [routerLink]="[data.routeLink]"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: true}"
+        >
+          <i class="sidenav-link-icon" [class]="data.icon"></i>
+          <span class="sidenav-link-text" *ngIf="collapsed">{{data.label}}</span>
+        </a>
+      </li>
+      <li class="sidenav-nav-item logout-button">
+        <hr style="background-color: white">
+        <a class="sidenav-nav-link" (click)="cerrarSesion()">
+          <i class="sidenav-link-icon fa-solid fa-right-from-bracket"></i>
+          <span class="sidenav-link-text" *ngIf="collapsed">Cerrar Sesion</span>
+        </a>
+      </li>
+  </ul>
+</div>

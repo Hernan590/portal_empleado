@@ -1,0 +1,17 @@
+.fa-file-pdf {
+    font-size: 1.3rem;
+  }
+
+@media (max-width: 768px) {
+    .table th, .table td {
+      font-size: 0.75rem;
+    }
+    .fa-file-pdf {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.75rem;
+    }
+  }
+
+  

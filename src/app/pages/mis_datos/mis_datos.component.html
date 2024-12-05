@@ -1,0 +1,256 @@
+<br>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8">
+        <div id="accordion">
+  
+          <div class="card">
+            <div  class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-dark collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  <i class="fas fa-id-card"></i> <b class="reduced-text2"> IDENTIFICACIÓN</b>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                <table class="table table-striped table-bordered">
+                  <tbody>
+                    <tr>
+                      <td><strong class="reduced-text">Tipo Identificación</strong></td>
+                      <td class="text-center" id="tipo_identificacion">CEDULA DE CIUDADANIA</td>
+                    </tr>
+                    <tr>
+                      <td><strong class="reduced-text">Identificación</strong></td>
+                      <td class="text-center" id="identificacion">15750440477</td>
+                    </tr>
+                    <tr>
+                      <td><strong class="reduced-text">Fecha de Expedicion</strong></td>
+                      <td class="text-center" id="fecha_expedicion">2014-02-21</td>
+                    </tr>
+                    <tr>
+                      <td><strong class="reduced-text">Fecha de Nacimiento</strong></td>
+                      <td class="text-center" id="fecha_expedicion">1996-04-23</td>
+                    </tr>
+                    <tr>
+                      <td><strong class="reduced-text">Ciudad de Expedición</strong></td>
+                      <td class="text-center" id="ciudad_expedicion">CALI</td>
+                    </tr>
+                    <tr>
+                      <td><strong class="reduced-text">Ciudad de Nacimiento</strong></td>
+                      <td class="text-center" id="ciudad_expedicion">CALI</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-dark collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <i class="fas fa-user"></i> <b class="reduced-text2"> DATOS PERSONALES</b>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                <table class="table table-striped table-bordered">
+                  <tbody>
+                    <tr>
+                      <td><strong class="reduced-text">Nombres</strong></td>
+                      <td class="text-center" id="nombres2">JUAN - ANDRES</td>
+                    </tr>
+                    <tr>
+                      <td><strong class="reduced-text">Apellidos</strong></td>
+                      <td class="text-center" id="apellidos2">CASILLAS - CARDENAS</td>
+                    </tr>
+                    <tr>
+                      <td><strong class="reduced-text">Direccion</strong></td>
+                      <td class="text-center" id="apellidos2">CALLE 212A</td>
+                    </tr>
+                    <tr>
+                      <td><strong class="reduced-text">Ciudad Residencia</strong></td>
+                      <td class="text-center" id="apellidos2">CALI</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-dark collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <i class="fas fa-address-book"></i> <b class="reduced-text2"> DATOS DE CONTACTO</b>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                <table class="table table-striped table-bordered">
+                  <tbody>
+                    <tr>
+                      <td colspan="2" class="text-center"><strong class="reduced-text">Correo Electrónico</strong></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="text-center" id="email2">{{ correo }} <i data-toggle="modal" data-target="#modalcambiarcorreo" style="cursor: pointer" class="fa-regular fa-pen-to-square primary text-primary"></i></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="text-center"><strong class="reduced-text">Teléfonos</strong></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" class="text-center">31054810041 <i data-toggle="modal" data-target="#modalcambiartelefono" style="cursor: pointer" class="fa-regular fa-pen-to-square primary text-primary"></i></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+  
+          <!-- funcionalidad para descargar certificado -->
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-dark collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <i class="fas fa-shield-alt"></i> <b class="reduced-text2"> SEGURIDAD SOCIAL</b>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+              <div class="card-body">
+                <table class="table table-striped table-bordered">
+                  <tbody>
+                    <tr>
+                      <td><strong class="reduced-text">EPS</strong></td>
+                      <td class="text-center" id="eps">EPS CO</td>
+                    </tr>
+                    <tr>
+                      <td><strong class="reduced-text">AFP</strong></td>
+                      <td class="text-center" id="afp">AFP CO</td>
+                    </tr>
+                    <tr>
+                      <td><strong class="reduced-text">CCF</strong></td>
+                      <td class="text-center" id="ccf">CCF CO</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- <div class="text-center mt-3">
+                  <button class="btn btn-primary">DESCARGAR CERTIFICADO DIGITAL</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+  
+          <div class="card">
+            <div class="card-header" id="headingFive">
+              <h5 class="mb-0">
+                <button class="btn btn-link text-dark collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <i class="fas fa-briefcase"></i> <b class="reduced-text2"> CONTRATACIÓN</b>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+              <div class="card-body">
+                <table class="table table-striped table-bordered">
+                  <tbody>
+                    <tr>
+                      <td><strong class="reduced-text">Empresa</strong></td>
+                      <td class="text-center" id="planta">EMPRESA SA</td>
+                    </tr>
+                    <tr>
+                      <td><strong class="reduced-text">Area</strong></td>
+                      <td class="text-center" id="area">AREA SA</td>
+                    </tr>
+                    <tr>
+                      <td><strong class="reduced-text">Cargo</strong></td>
+                      <td class="text-center" id="cargo">INGENIERO</td>
+                    </tr>
+                    <tr>
+                      <td><strong class="reduced-text">Tipo de contrato</strong></td>
+                      <td class="text-center" id="planta">TERMINO INDEFINIDO</td>
+                    </tr>
+                    <tr>
+                      <td><strong class="reduced-text">Fecha de ingreso</strong></td>
+                      <td class="text-center" id="planta">2020-05-07</td>
+                    </tr>
+                    <tr>
+                      <td><strong class="reduced-text">Salario</strong></td>
+                      <td class="text-center" id="salario">$ 3.200.000</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- <div class="text-center mt-3">
+                  <button class="btn btn-primary">DESCARGAR CARTA LABORAL</button>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade" data-backdrop="static" data-keyboard="false" tabindex="2" aria-labelledby="staticBackdropLabel" aria-hidden="true" id="modalcambiartelefono">
+    <div class="modal-dialog" [ngClass]="modalClass">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="configModalLabel">Numero telefonico seleccionado: <b> 31054810041 </b></h5>
+          <button id="cerrarModal" type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12">
+              <label for="telefono"><b>Nuevo numero</b></label>
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
+                  </div>
+                  <input placeholder="Escriba el nuevo numero de telefono" [(ngModel)]="telefononuevo" (keypress)="numeros($event)" class="form-control" id="telefono" type="text" maxlength="10">
+                  <p></p>
+              </div>
+          </div>   
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa-solid fa-xmark"></i> Cancelar</button>
+          <button type="button" class="btn btn-success"><i class="fa-solid fa-floppy-disk"></i> Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" data-backdrop="static" id="modalcambiarcorreo">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="configModalLabel">El correo seleccionado es: <b> {{ correo }} </b></h5>
+          <button id="cerrarModal" type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-12">
+              <label for="telefono"><b>Nuevo correo</b></label>
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                  </div>
+                  <input placeholder="Escriba un nuevo correo" [(ngModel)]="correoNuevo" class="form-control" id="correo" type="email">
+                  <p></p>
+              </div>
+          </div>   
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa-solid fa-xmark"></i> Cancelar</button>
+          <button type="button" class="btn btn-success"><i class="fa-solid fa-floppy-disk"></i> Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>

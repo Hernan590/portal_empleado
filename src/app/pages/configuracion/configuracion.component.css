@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+    .card-header h4 {
+      font-size: 0.9rem;
+    }
+    .btn {
+      font-size: 0.8rem;
+    }
+    .input-group-text {
+      font-size: 0.8rem;
+    }
+    .form-group label {
+      font-size: 0.8rem;
+    }
+    .input-group input{
+      font-size: 0.7rem;
+    }
+  }

@@ -1,0 +1,43 @@
+
+<div class="content" *ngIf="showContent">
+  <div class="bienvenida">
+    <div class="header">
+      <h1>{{ saludo }} al Portal del Empleado</h1>
+      <p>Este portal te permitirá gestionar tu información personal, consultar desprendibles y revisar tus quincenas. A continuación, te presentamos una descripción de cada sección para que conozcas su funcionalidad (los botones se encuentran en el panel a la izquierda).</p>
+    </div>
+  
+    <div class="sections-list">
+      <div class="section">
+        <i class="fas fa-id-card icon"></i>
+        <div class="section-content">
+          <h2>Mis Datos</h2>
+          <p>Consulta y actualiza tu información personal, como dirección, número de contacto y detalles de identificación.</p>
+        </div>
+      </div>
+      <br>
+      <div class="section">
+        <i class="fa-solid fa-file-invoice-dollar icon"></i>
+        <div class="section-content">
+          <h2>Desprendibles</h2>
+          <p>Visualiza y descarga tus desprendibles de pago. Lleva un control personal de tus ingresos.</p>
+        </div>
+      </div>
+      <br>
+      <div class="section">
+        <i class="fa-solid fa-lock icon"></i>
+        <div class="section-content">
+          <h2>Contraseña</h2>
+          <p>Actualiza la contraseña de tu portal empleado por una nueva.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-sidebar (onToggleSideNav)="onToggleSideNav($event)"></app-sidebar>
+<app-body
+    *ngIf="!showContent"
+    [collapsed]="isSideNavCollapsed"
+    [screenWidth]="screenWidth"
+></app-body>
+
+
