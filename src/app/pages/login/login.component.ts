@@ -125,25 +125,5 @@ export default class LoginComponent {
     }
   }
 
-  numeros(event: KeyboardEvent): boolean {
-    const key = event.keyCode || event.which;
-    const tecla = String.fromCharCode(key).toLowerCase();
-    const letras = ' 0123456789';
-    const especiales = [8, 37, 39, 46];
-
-    let tecla_especial = false;
-    for (let i in especiales) {
-      if (key === especiales[i]) {
-        tecla_especial = true;
-        break;
-      }
-    }
-
-    if (letras.indexOf(tecla) === -1 && !tecla_especial) {
-      return false;
-    }
-
-    return true;
-  }
 
 }
